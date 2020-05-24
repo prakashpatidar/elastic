@@ -47,6 +47,18 @@ curl -X PUT "http://localhost:9200/test/_mapping?pretty" -H 'Content-Type: appli
   }
 }
 '
+###### Edit Mapping , add non indexable field
+curl -X PUT "http://localhost:9200/test/_mapping?pretty" -H 'Content-Type: application/json' -d'
+{
+  "properties": {
+    "field3": {
+      "type": "integer",
+      "index": false
+    }
+  }
+}
+'
+
 
 
 
