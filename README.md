@@ -4,8 +4,11 @@ Elastic Related help &amp; code
 ### Cluster
 #### Check Health og cluster
 curl -X GET 'http://localhost:9200/_cluster/health'
-#### Create Index
-##### Plain Index
+#### Index DDL API
+##### Create Plain Index
 curl -X PUT 'http://localhost:9200/cdr?pretty'
+##### Drop Index
+curl -X DELETE "localhost:9200/twitter?pretty"
+
 
 
