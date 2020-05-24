@@ -10,7 +10,7 @@ curl -X PUT 'http://localhost:9200/cdr?pretty'
 ##### Drop Index
 curl -X DELETE "localhost:9200/twitter?pretty"
 ##### Create Index for n shard and r replicas
-curl -X PUT "localhost:9200/cdr?pretty" -H 'Content-Type: application/json' -d'
+curl -X PUT "http://localhost:9200/cdr?pretty" -H 'Content-Type: application/json' -d'
 {
     "settings" : {
         "index" : {
@@ -20,6 +20,8 @@ curl -X PUT "localhost:9200/cdr?pretty" -H 'Content-Type: application/json' -d'
     }
 }
 '
+##### List Indexes
+curl -X GET "http://localhost:9200/_cat/indices/twi*?v&s=index&pretty"
 
 
 
