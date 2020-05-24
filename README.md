@@ -36,6 +36,6 @@ curl -X PUT "http://localhost:9200/test?pretty" -H 'Content-Type: application/js
 }
 '
 ###### Get Index Mapping
-curl -X GET "http://localhost:9200/twitter/_mapping?pretty"
+curl -X GET "http://localhost:9200/test/_mapping?pretty"
 
 
