@@ -6,5 +6,5 @@ Elastic Related help &amp; code
 curl -XGET 'http://localhost:9200/_cluster/health'
 #### Create Index
 ##### Plain Index
-curl -X PUT "localhost:9200/twitter?pretty"
+curl -X PUT 'localhost:9200/twitter?pretty'
 
