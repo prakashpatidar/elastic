@@ -21,7 +21,7 @@ curl -X PUT "http://localhost:9200/cdr?pretty" -H 'Content-Type: application/jso
 }
 '
 ##### List Indexes
-curl -X GET "http://localhost:9200/_cat/indices/twi*?v&s=index&pretty"
+curl -X GET "http://localhost:9200/_cat/indices/*?v&s=index&pretty"
 
 
 
