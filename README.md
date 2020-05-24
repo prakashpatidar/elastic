@@ -23,7 +23,7 @@ curl -X PUT "http://localhost:9200/cdr?pretty" -H 'Content-Type: application/jso
 ##### List Indexes
 curl -X GET "http://localhost:9200/_cat/indices/*?v&s=index&pretty"
 ##### Create Index with Mapping
-PUT /test
+curl -X PUT "localhost:9200/test?pretty" -H 'Content-Type: application/json' -d'
 {
     "settings" : {
         "number_of_shards" : 1
@@ -34,5 +34,6 @@ PUT /test
         }
     }
 }
+'
 
 
