@@ -41,12 +41,8 @@ curl -X GET "http://localhost:9200/test/_mapping?pretty"
 curl -X PUT "http://localhost:9200/test/_mapping?pretty" -H 'Content-Type: application/json' -d'
 {
   "properties": {
-    "name": {
-      "properties": {
-        "last": {
-          "type": "text"
-        }
-      }
+    "field2": {
+      "type": "integer"
     }
   }
 }
