@@ -61,6 +61,12 @@ curl -X PUT "http://localhost:9200/test/_mapping?pretty" -H 'Content-Type: appli
 ###### View Mapping of specific field in index
 curl -X GET "http://localhost:9200/test/_mapping/field/field3?pretty"
 
+###### Edit Index Setting
 
-
-
+curl -X PUT "http://localhost:9200/test/_settings?pretty" -H 'Content-Type: application/json' -d'
+{
+    "index" : {
+        "number_of_replicas" : 2
+    }
+}
+'
