@@ -1,5 +1,5 @@
 # Analyzer Info
-##### Analyzer output 
+###### Analyzer output 
 curl -X POST "http://localhost:9200/POST _analyze " -H 'Content-Type: application/json' -d'
 {
    "analyzer": "standard",
