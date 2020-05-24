@@ -35,5 +35,7 @@ curl -X PUT "localhost:9200/test?pretty" -H 'Content-Type: application/json' -d'
     }
 }
 '
+###### Get Index Mapping
+curl -X GET "localhost:9200/twitter/_mapping?pretty"
 
 
