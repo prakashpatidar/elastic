@@ -9,6 +9,17 @@ curl -X GET 'http://localhost:9200/_cluster/health'
 curl -X PUT 'http://localhost:9200/cdr?pretty'
 ##### Drop Index
 curl -X DELETE "localhost:9200/twitter?pretty"
+##### Create Index for n shard and r replicas
+curl -X PUT "localhost:9200/cdr?pretty" -H 'Content-Type: application/json' -d'
+{
+    "settings" : {
+        "index" : {
+            "number_of_shards" : 3, 
+            "number_of_replicas" : 2 
+        }
+    }
+}
+'
 
 
 
